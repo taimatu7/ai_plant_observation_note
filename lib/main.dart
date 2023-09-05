@@ -1,6 +1,5 @@
+import 'package:ai_plant_observation_note/presentation/component/screens/home_screen.dart';
 import 'package:ai_plant_observation_note/routes/routes.dart';
-
-import 'presentation/plantation/screens/plantation_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,7 +17,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
         useMaterial3: true,
       ),
-      home: const PlantationScreen(),
+      home: const HomeScreen(),
       routes: routes,
     );
   }

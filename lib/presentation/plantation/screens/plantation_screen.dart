@@ -47,14 +47,6 @@ class PlantationScreen extends ConsumerWidget {
           ),
         ],
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        items: [
-          BottomNavigationBarItem(icon: Icon(Icons.square), label: '区画を追加'),
-          BottomNavigationBarItem(icon: Icon(Icons.add), label: '植物を追加'),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.menu_book_sharp), label: '観察ノート一覧'),
-        ],
-      ),
     );
   }
 }
