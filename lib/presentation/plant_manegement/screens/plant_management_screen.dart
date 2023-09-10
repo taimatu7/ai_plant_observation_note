@@ -1,26 +1,17 @@
-import 'package:ai_plant_observation_note/presentation/component/endDrawer.dart';
-import 'package:ai_plant_observation_note/presentation/plantation/widgets/section.dart';
-import 'package:ai_plant_observation_note/presentation/plantation/widgets/weather_info_area.dart';
+import 'package:ai_plant_observation_note/presentation/plant_manegement/widgets/section.dart';
+import 'package:ai_plant_observation_note/presentation/plant_manegement/widgets/weather_info_area.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-class PlantationScreen extends ConsumerWidget {
-  const PlantationScreen({super.key});
+class PlantManagementScreen extends ConsumerWidget {
+  const PlantManagementScreen({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('植物観察ノート'),
+        title: Center(child: const Text('植物管理')),
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.settings),
-            onPressed: () {
-              Navigator.of(context).pushNamed('/settings');
-            },
-          ),
-        ],
       ),
       body: Column(
         children: [
